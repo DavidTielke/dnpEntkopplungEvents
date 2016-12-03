@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1a93c728-f51c-4779-8c2b-66143c150c5d" name="WorkflowMitTasks" linkedPackageId="8590f28a-460a-4d9b-8b0a-e30f36067fe1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="e2fb116f-a9b1-4de4-807e-63075abe974e">
+      <elementDefinition Id="1d93b894-50ff-433b-9083-5fb256f645f9" />
+      <body>Main
+UI-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="ea256323-98df-4e36-b52e-6a98a6fc538f" LastKnownName="Rechnung erfassen" />
+      </annotatedElements>
+    </comment>
+    <comment Id="0c41d343-ecd8-485c-9c82-5afeef8a4e69">
+      <elementDefinition Id="27961a15-619e-4453-bf94-2791a169cbc5" />
+      <body>BillManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="d3f33009-c8a2-45ba-bd0b-dc97c2e25ea6" LastKnownName="Rechnung verarbeiten" />
+      </annotatedElements>
+    </comment>
+    <comment Id="70cd085f-2194-4a5d-8c6b-f45cd3434a64">
+      <elementDefinition Id="aaae156b-3ca6-4e59-969a-6c50566488e4" />
+      <body>BillRepository
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="36cef15f-ab53-4902-bd2f-18316ba90f24" LastKnownName="Rechnung speichern" />
+      </annotatedElements>
+    </comment>
+    <comment Id="084b0094-96dc-47f1-ab43-0bea2e9aba2e">
+      <elementDefinition Id="0d281614-517f-44e7-a8af-cbb484bd7a0a" />
+      <body>BillPositionRepo
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8e5164d5-bcf2-4977-9134-aecd36929bb1" LastKnownName="Positionen speichern" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e01b1b01-d0b9-4b24-8e58-feb37ac114d8">
+      <elementDefinition Id="50ab20f5-3385-4610-91d4-877dc39baa39" />
+      <body>TaskManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="cea4a364-cbb9-4ec0-a635-09a0a93a5c15" LastKnownName="Task erstellen" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="38045a95-49bb-4f55-99e3-5223aba42ee6" name="WorkflowMitTasks" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="af420560-7bfc-4b6d-8bfc-a1304060a06c" />
+        <nodes>
+          <initialNode Id="efbda8b8-13eb-463d-ac23-c3d2299fb2da" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c51ecc40-3f1f-44ce-9d34-bd23d7100a6d" />
+            <flowNodeTargets>
+              <controlFlow Id="6dab43b2-eb80-4327-b7e7-9a74e1d4d568" isLeaf="false">
+                <opaqueActionMoniker Id="ea256323-98df-4e36-b52e-6a98a6fc538f" LastKnownName="Rechnung erfassen" />
+                <elementDefinition Id="959e34b3-65c3-4838-8793-4c95f5221bc7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ea256323-98df-4e36-b52e-6a98a6fc538f" name="Rechnung erfassen" isLeaf="false">
+            <elementDefinition Id="d3329276-cd70-43da-a196-3951f96debb0" />
+            <flowNodeTargets>
+              <controlFlow Id="1939fdf5-f48e-47af-9940-6941cd28ebee" isLeaf="false">
+                <opaqueActionMoniker Id="d3f33009-c8a2-45ba-bd0b-dc97c2e25ea6" LastKnownName="Rechnung verarbeiten" />
+                <elementDefinition Id="24b77a5f-dea9-47c1-9e6d-e78f9e757d93" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d3f33009-c8a2-45ba-bd0b-dc97c2e25ea6" name="Rechnung verarbeiten" isLeaf="false">
+            <elementDefinition Id="5cfc52a9-3337-443e-87e5-99b4ca427ab1" />
+            <flowNodeTargets>
+              <controlFlow Id="f5973b74-d8d8-4360-9e07-51d5e810c2be" isLeaf="false">
+                <opaqueActionMoniker Id="36cef15f-ab53-4902-bd2f-18316ba90f24" LastKnownName="Rechnung speichern" />
+                <elementDefinition Id="0216f629-1ed4-4cc4-b176-e71d1405df9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="36cef15f-ab53-4902-bd2f-18316ba90f24" name="Rechnung speichern" isLeaf="false">
+            <elementDefinition Id="49811b9e-b290-4c36-8830-86531d1dd709" />
+            <flowNodeTargets>
+              <controlFlow Id="2db4a30c-477a-4c94-a732-4faa19ca1c99" isLeaf="false">
+                <opaqueActionMoniker Id="8e5164d5-bcf2-4977-9134-aecd36929bb1" LastKnownName="Positionen speichern" />
+                <elementDefinition Id="38860cc1-b256-4b14-8a54-b33a1c9fbd8d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8e5164d5-bcf2-4977-9134-aecd36929bb1" name="Positionen speichern" isLeaf="false">
+            <elementDefinition Id="dd2fee88-696f-49f0-8b9c-a56a0c4967a0" />
+            <flowNodeTargets>
+              <controlFlow Id="61fc8d94-103b-480c-b4e0-a31558cebfdc" isLeaf="false">
+                <opaqueActionMoniker Id="cea4a364-cbb9-4ec0-a635-09a0a93a5c15" LastKnownName="Task erstellen" />
+                <elementDefinition Id="610dae19-788e-48dc-ba30-6ed80d920a70" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="01a96bf9-aa32-4871-b83f-9a050842508f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="200a12ff-957e-49ee-a762-5747539df84a" />
+          </activityFinalNode>
+          <opaqueAction Id="cea4a364-cbb9-4ec0-a635-09a0a93a5c15" name="Task erstellen" isLeaf="false">
+            <elementDefinition Id="c1a680e5-b3ee-46ce-b93d-ba4365077b20" />
+            <flowNodeTargets>
+              <controlFlow Id="f7e836f7-eb35-44a5-b74e-4052e2a57e79" isLeaf="false">
+                <activityFinalNodeMoniker Id="01a96bf9-aa32-4871-b83f-9a050842508f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6e1bc7a6-471b-46ce-b762-13c8ee19d73e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8590f28a-460a-4d9b-8b0a-e30f36067fe1" name="Modellierung">
+    <elementDefinition Id="b0034512-b2a7-44f6-8eb5-ff54b3e785e3" />
+  </package>
+</activityRootModel>

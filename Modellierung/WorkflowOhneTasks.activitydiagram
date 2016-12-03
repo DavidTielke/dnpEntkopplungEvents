@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cb0d31ce-4246-4c71-b59c-a4233fcc4861" name="WorkflowOhneTasks" linkedPackageId="c57130b5-5d2c-4028-9e57-68a73cc658b8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="f0610152-c9fe-4153-a80d-faaf5e184615">
+      <elementDefinition Id="afb8299a-4dac-426a-a033-e3a5217ba9ff" />
+      <body>Main
+UI-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="085e927b-bb83-4b04-8fc7-0df3b7122d25" LastKnownName="Rechnung erfassen" />
+      </annotatedElements>
+    </comment>
+    <comment Id="db0ff622-5808-4b9d-9655-5b07f6df1b1f">
+      <elementDefinition Id="4d3e8e29-28da-47ce-8430-618837806d14" />
+      <body>BillManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="28014a63-7105-41bf-b160-c60500eb4276" LastKnownName="Rechnung verarbeiten" />
+      </annotatedElements>
+    </comment>
+    <comment Id="5e24d83b-688d-49af-bbbf-5c445ea47453">
+      <elementDefinition Id="d5c347d6-6a05-4bdf-bbaa-2fa8f3ec289b" />
+      <body>BillRepository
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="d151adee-d2cf-4e25-83ec-310fada40a86" LastKnownName="Rechnung speichern" />
+      </annotatedElements>
+    </comment>
+    <comment Id="db927351-0776-48e7-9128-12205439fb2f">
+      <elementDefinition Id="9cf0529a-b771-40e1-96bc-d59c48069517" />
+      <body>BillPositionRepo
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="0b02bcf4-c912-4d1f-893a-e510ef91faf7" LastKnownName="Positionen speichern" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="81df57a0-ccb4-4dfb-948a-3ac96fd78c81" name="WorkflowOhneTasks" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f9067baa-a089-46e2-9ffe-da02d35a4804" />
+        <nodes>
+          <initialNode Id="0528e452-db8d-42e3-a13e-27168403997e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="95b644fc-b5d6-4d71-bae9-a764520671f8" />
+            <flowNodeTargets>
+              <controlFlow Id="583537b8-8681-4fce-accb-7e5573442d66" isLeaf="false">
+                <opaqueActionMoniker Id="085e927b-bb83-4b04-8fc7-0df3b7122d25" LastKnownName="Rechnung erfassen" />
+                <elementDefinition Id="ce28262d-a197-4c2b-87d0-9604773f1cff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="085e927b-bb83-4b04-8fc7-0df3b7122d25" name="Rechnung erfassen" isLeaf="false">
+            <elementDefinition Id="ee182a27-884d-4e84-a9af-b8c085424b16" />
+            <flowNodeTargets>
+              <controlFlow Id="e36c52ed-0888-45d4-b12b-626f5484ae36" isLeaf="false">
+                <opaqueActionMoniker Id="28014a63-7105-41bf-b160-c60500eb4276" LastKnownName="Rechnung verarbeiten" />
+                <elementDefinition Id="67389f55-7f22-4b30-a419-425487b9c228" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="28014a63-7105-41bf-b160-c60500eb4276" name="Rechnung verarbeiten" isLeaf="false">
+            <elementDefinition Id="50369d6b-21aa-4635-ae18-117b4fed7a79" />
+            <flowNodeTargets>
+              <controlFlow Id="da5f2f1f-2611-4418-9de2-0ebcd1bb3aba" isLeaf="false">
+                <opaqueActionMoniker Id="d151adee-d2cf-4e25-83ec-310fada40a86" LastKnownName="Rechnung speichern" />
+                <elementDefinition Id="dad3d0b5-e4d0-4eb9-ab5a-68feb5c1d1ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d151adee-d2cf-4e25-83ec-310fada40a86" name="Rechnung speichern" isLeaf="false">
+            <elementDefinition Id="9ee7414a-6219-406c-ae36-1a6e7f22b10e" />
+            <flowNodeTargets>
+              <controlFlow Id="636279be-0cc7-4659-82ab-ec0e3755dff2" isLeaf="false">
+                <opaqueActionMoniker Id="0b02bcf4-c912-4d1f-893a-e510ef91faf7" LastKnownName="Positionen speichern" />
+                <elementDefinition Id="df00c206-1420-4eb8-9e0e-02d0fb581cf7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0b02bcf4-c912-4d1f-893a-e510ef91faf7" name="Positionen speichern" isLeaf="false">
+            <elementDefinition Id="28896eef-454d-4419-b327-7d8f42d1a1dd" />
+            <flowNodeTargets>
+              <controlFlow Id="b3291b60-9a72-48d9-b6cc-83f7bd6f4fd8" isLeaf="false">
+                <activityFinalNodeMoniker Id="bf7404f6-e987-4054-9366-b648f90f6039" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9627b357-c227-4c35-856d-bbb74a96569a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="bf7404f6-e987-4054-9366-b648f90f6039" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0ef5555f-31ca-403c-b964-d416133f4d86" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c57130b5-5d2c-4028-9e57-68a73cc658b8" name="Modellierung">
+    <elementDefinition Id="b0034512-b2a7-44f6-8eb5-ff54b3e785e3" />
+  </package>
+</activityRootModel>

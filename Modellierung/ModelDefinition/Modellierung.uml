@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="b0034512-b2a7-44f6-8eb5-ff54b3e785e3"
+  name="Modellierung" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="afb8299a-4dac-426a-a033-e3a5217ba9ff">
+      <body>Main
+UI-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="ee182a27-884d-4e84-a9af-b8c085424b16"
+          LastKnownName="Rechnung erfassen"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="4d3e8e29-28da-47ce-8430-618837806d14">
+      <body>BillManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="50369d6b-21aa-4635-ae18-117b4fed7a79"
+          LastKnownName="Rechnung verarbeiten"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d5c347d6-6a05-4bdf-bbaa-2fa8f3ec289b">
+      <body>BillRepository
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="9ee7414a-6219-406c-ae36-1a6e7f22b10e"
+          LastKnownName="Rechnung speichern"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="9cf0529a-b771-40e1-96bc-d59c48069517">
+      <body>BillPositionRepo
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="28896eef-454d-4419-b327-7d8f42d1a1dd"
+          LastKnownName="Positionen speichern"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="1d93b894-50ff-433b-9083-5fb256f645f9">
+      <body>Main
+UI-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="d3329276-cd70-43da-a196-3951f96debb0"
+          LastKnownName="Rechnung erfassen"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="27961a15-619e-4453-bf94-2791a169cbc5">
+      <body>BillManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="5cfc52a9-3337-443e-87e5-99b4ca427ab1"
+          LastKnownName="Rechnung verarbeiten"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="aaae156b-3ca6-4e59-969a-6c50566488e4">
+      <body>BillRepository
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="49811b9e-b290-4c36-8830-86531d1dd709"
+          LastKnownName="Rechnung speichern"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="0d281614-517f-44e7-a8af-cbb484bd7a0a">
+      <body>BillPositionRepo
+Data-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="dd2fee88-696f-49f0-8b9c-a56a0c4967a0"
+          LastKnownName="Positionen speichern"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="50ab20f5-3385-4610-91d4-877dc39baa39">
+      <body>TaskManager
+Logic-Layer</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="c1a680e5-b3ee-46ce-b93d-ba4365077b20"
+          LastKnownName="Task erstellen"
+          LastKnownLocation="Modellierung.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="f9067baa-a089-46e2-9ffe-da02d35a4804"
+        name="WorkflowOhneTasks"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="95b644fc-b5d6-4d71-bae9-a764520671f8"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce28262d-a197-4c2b-87d0-9604773f1cff"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ee182a27-884d-4e84-a9af-b8c085424b16"
+                  LastKnownName="Rechnung erfassen"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="ee182a27-884d-4e84-a9af-b8c085424b16"
+            name="Rechnung erfassen"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67389f55-7f22-4b30-a419-425487b9c228"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="50369d6b-21aa-4635-ae18-117b4fed7a79"
+                  LastKnownName="Rechnung verarbeiten"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="50369d6b-21aa-4635-ae18-117b4fed7a79"
+            name="Rechnung verarbeiten"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dad3d0b5-e4d0-4eb9-ab5a-68feb5c1d1ec"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9ee7414a-6219-406c-ae36-1a6e7f22b10e"
+                  LastKnownName="Rechnung speichern"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9ee7414a-6219-406c-ae36-1a6e7f22b10e"
+            name="Rechnung speichern"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df00c206-1420-4eb8-9e0e-02d0fb581cf7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="28896eef-454d-4419-b327-7d8f42d1a1dd"
+                  LastKnownName="Positionen speichern"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="28896eef-454d-4419-b327-7d8f42d1a1dd"
+            name="Positionen speichern"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9627b357-c227-4c35-856d-bbb74a96569a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0ef5555f-31ca-403c-b964-d416133f4d86"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="0ef5555f-31ca-403c-b964-d416133f4d86"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="af420560-7bfc-4b6d-8bfc-a1304060a06c"
+        name="WorkflowMitTasks"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c51ecc40-3f1f-44ce-9d34-bd23d7100a6d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="959e34b3-65c3-4838-8793-4c95f5221bc7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d3329276-cd70-43da-a196-3951f96debb0"
+                  LastKnownName="Rechnung erfassen"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d3329276-cd70-43da-a196-3951f96debb0"
+            name="Rechnung erfassen"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="24b77a5f-dea9-47c1-9e6d-e78f9e757d93"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5cfc52a9-3337-443e-87e5-99b4ca427ab1"
+                  LastKnownName="Rechnung verarbeiten"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5cfc52a9-3337-443e-87e5-99b4ca427ab1"
+            name="Rechnung verarbeiten"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0216f629-1ed4-4cc4-b176-e71d1405df9d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="49811b9e-b290-4c36-8830-86531d1dd709"
+                  LastKnownName="Rechnung speichern"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="49811b9e-b290-4c36-8830-86531d1dd709"
+            name="Rechnung speichern"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38860cc1-b256-4b14-8a54-b33a1c9fbd8d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dd2fee88-696f-49f0-8b9c-a56a0c4967a0"
+                  LastKnownName="Positionen speichern"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dd2fee88-696f-49f0-8b9c-a56a0c4967a0"
+            name="Positionen speichern"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="610dae19-788e-48dc-ba30-6ed80d920a70"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c1a680e5-b3ee-46ce-b93d-ba4365077b20"
+                  LastKnownName="Task erstellen"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="200a12ff-957e-49ee-a762-5747539df84a"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="c1a680e5-b3ee-46ce-b93d-ba4365077b20"
+            name="Task erstellen"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6e1bc7a6-471b-46ce-b762-13c8ee19d73e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="200a12ff-957e-49ee-a762-5747539df84a"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Modellierung.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
